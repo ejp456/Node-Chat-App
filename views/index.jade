@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  script(src="https://cdn.socket.io/socket.io-1.2.0.js")
+  script(src="http://code.jquery.com/jquery-1.11.1.js")
+  script(src="javascripts/vendor/bootstrap.min.js")
+  script(src="/javascripts/chat.js")
+  div.container
+    div.row
+      div.col-md-8.chat-window
+        div.chat-container
+          div.media
+            div(id="messages")
+            textarea(id="m").send-wrap
+    div.row
+      div.btn-panel
+        a.sendButton.col-lg-4.btn.
+          Send
+
+
+
